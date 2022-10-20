@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@1,6..96&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body {
+  background: #114357;  
+background: -webkit-linear-gradient(to top, #F29492, #114357);  
+background: linear-gradient(to right, #F29492, #114357); 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
+.app-container{
   min-height: 100vh;
+ margin-left: 30%; 
+}
+.app-heading h1{
+  font-family: 'Fuzzy Bubbles', cursive;
+  color:  #802131;
+  margin-left: 30px;
+}
+.app-heading h1 span{
+  color: #240b36;
+}
+.form-container{
+  background-color: #334f5bc9;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 15px;
+  padding: 30px;
+  width: 50%;
+  border-radius: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+#error-message-name,
+#error-message-feedback{
+  margin-top: -15px;
+  margin-left: -55px;
+  color: rgba(255, 235, 205, 0.737);
+  display: none;
+  font-size: 12px;
+  font-family: 'Bodoni Moda', serif;
 }
+.feedback-container{
+  width: 50%;
+  padding: 30px;
+}
+.feedback-container p{
+  font-family: 'Fuzzy Bubbles', cursive;
+  color: #240b36;
+  font-size: 22px;
+  font-weight: 600;
+}
+.feedback-container p span{
+  color: #802131;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
