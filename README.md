@@ -1,3 +1,10 @@
+A React Project wherein you can submit your feedbacks. 
+Softwares used:
+    - VS Code (Code editor)
+Technologies USed:
+    -React
+    -Firebase(DB)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
