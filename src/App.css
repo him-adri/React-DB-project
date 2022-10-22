@@ -20,7 +20,7 @@ background: linear-gradient(to right, #F29492, #114357);
   color: #240b36;
 }
 .form-container{
-  background-color: #334f5bc9;
+  background-color: #334f5b;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,4 +52,8 @@ background: linear-gradient(to right, #F29492, #114357);
 .feedback-container p span{
   color: #802131;
 
+}
+.feedback-container .feedback{
+  text-align: right;
+  margin-top: -50px;
 }

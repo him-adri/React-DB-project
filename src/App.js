@@ -43,8 +43,11 @@ function App() {
         console.log(data);
         setUserMessage("");
         setUserName("");
-        // setGetMessages(true)
+        setGetMessages(true)
       });
+      alert(`${userName}, your feedback is received.`);
+      userName("");
+      userMessage("");
   };
 
   useEffect(() => {
@@ -118,12 +121,13 @@ function App() {
         </div>
 
         <div className="feedback-container">
-          <p>Feed<span>backs</span></p>
+          <p>N<span>ame</span></p>
+          <p className="feedback">Feed<span>backs</span></p>
           {
             messageList && messageList.map((item, index) => {
               return(
                 <TableContainer >
-                  <Table sx={{ minWidth: 250 }} size="small" aria-label="a dense table">
+                  <Table sx={{ minWidth: 250 }} size="small" aria-label="a dense table">                    
                     <TableHead>
                       <TableRow>
                         <TableCell>{item.userName}</TableCell>
